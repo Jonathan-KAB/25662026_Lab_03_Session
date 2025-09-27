@@ -1,4 +1,3 @@
-// Settings/core.php
 <?php
 session_start();
 
@@ -17,7 +16,7 @@ else{
 }
 
 function isAdmin(){
-    if isLoggedIn(){
+    if (isLoggedIn()){
         return $_SESSION['user_role'] == 2;
     }
 }
